@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Foto ilustrativa: Paçoca Rolha">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EFD9A8"/>
+      <stop offset="1" stop-color="#C9A269"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#g)"/>
+  <circle cx="300" cy="185" r="120" fill="#FFFFFF" opacity="0.4"/>
+  <text x="300" y="225" font-size="140" text-anchor="middle" dominant-baseline="middle">🥜</text>
+  <text x="395" y="135" font-size="55" text-anchor="middle" dominant-baseline="middle">🎍</text>
+</svg>

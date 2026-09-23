@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="theme-color" content="#C81E2E">
+
+    <!-- ============ SEO BÁSICO ============ -->
+    <title>Distribuidora Águia | Doces, paçocas e pipocas</title>
+    <meta
+        name="description"
+        content="Distribuidora de alimentos em Picos - PI. Doces, paçocas, pipocas e muito mais. Envie seu pedido diretamente pelo WhatsApp."
+    >
+    <meta name="author" content="Distribuidora Águia">
+
+    <!-- ============ OPEN GRAPH ============ -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Distribuidora Águia | Doces, paçocas e pipocas">
+    <meta
+        property="og:description"
+        content="Confira nossos produtos e envie seu pedido diretamente pelo WhatsApp."
+    >
+    <meta property="og:image" content="assets/images/hero.svg">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- ============ FAVICON ============ -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+    <!-- ============ FONTES ============ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================================================== -->
+    <!-- HEADER                                             -->
+    <!-- ================================================== -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+
+            <a href="#inicio" class="logo" aria-label="Ir para o início">
+                <span class="logo-marca" aria-hidden="true">🦅</span>
+                <span class="logo-texto">
+                    <small>Distribuidora</small>
+                    <strong id="logoNome">ÁGUIA</strong>
+                </span>
+            </a>
+
+            <nav class="nav" aria-label="Menu principal">
+                <ul class="nav-lista" id="navLista">
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre nós</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-acoes">
+                <button
+                    type="button"
+                    class="carrinho-btn"
+                    id="abrirCarrinhoBtn"
+                    aria-label="Abrir carrinho de pedidos"
+                >
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path
+                            d="M3 3h2l2.6 12.2A2 2 0 0 0 9.56 17H17.6a2 2 0 0 0 1.96-1.58L21 7H6"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                        />
+                        <circle cx="10" cy="20" r="1.4" fill="currentColor"/>
+                        <circle cx="17" cy="20" r="1.4" fill="currentColor"/>
+                    </svg>
+                    <span class="carrinho-contador" id="carrinhoContador" hidden>0</span>
+                </button>
+
+                <button
+                    type="button"
+                    class="menu-btn"
+                    id="menuBtn"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    aria-controls="navLista"
+                >
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ================================================== -->
+        <!-- HERO / BANNER PRINCIPAL                            -->
+        <!-- ================================================== -->
+        <section class="hero" id="inicio">
+            <div class="container hero-grid">
+
+                <div class="hero-texto">
+                    <span class="chip">Distribuidora de alimentos • Pedido pelo WhatsApp</span>
+                    <h1 id="heroTitulo">Tradição e variedade em cada pedido.</h1>
+                    <p id="heroTexto">Paçocas, doces, pipocas e muito mais. Confira nosso catálogo e monte seu pedido de forma rápida e prática.</p>
+
+                    <div class="hero-acoes">
+                        <a href="#produtos" class="btn btn-primario">Ver produtos</a>
+                        <a href="#produtos" class="btn btn-secundario">Fazer pedido</a>
+                    </div>
+
+                    <ul class="hero-info">
+                        <li id="heroHorario">
+                            <span aria-hidden="true">🕐</span>
+                            <span>Horário: <strong id="horarioTexto">[HORÁRIO]</strong></span>
+                        </li>
+                        <li id="heroLocal">
+                            <span aria-hidden="true">📍</span>
+                            <span><strong id="cidadeTexto">Picos</strong> — <strong id="estadoTexto">PI</strong></span>
+                        </li>
+                        <li id="heroWhats">
+                            <span aria-hidden="true">💬</span>
+                            <span>Pedidos direto no <strong>WhatsApp</strong></span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hero-imagem">
+                    <img src="assets/images/hero.svg" alt="Ilustração com doces, paçoca e pipoca da Distribuidora Águia" loading="eager">
+                    <div class="hero-badge" aria-hidden="true">
+                        <strong>Seu pedido em minutos</strong>
+                        <span>direto para o nosso WhatsApp 📲</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================== -->
+        <!-- DESTAQUES / DIFERENCIAIS                          -->
+        <!-- ================================================== -->
+        <section class="destaques" id="destaques">
+            <div class="container">
+
+                <h2 class="titulo-secao">Por que comprar com a Águia?</h2>
+
+                <div class="destaques-grid">
+
+                    <article class="destaque-card">
+                        <div class="destaque-icone" aria-hidden="true">⭐</div>
+                        <h3>Qualidade</h3>
+                        <p>Produtos selecionados de fornecedores confiáveis, sempre fresquinhos.</p>
+                    </article>
+
+                    <article class="destaque-card">
+                        <div class="destaque-icone" aria-hidden="true">📦</div>
+                        <h3>Variedade</h3>
+                        <p>Doces, paçocas, pipocas e salgadinhos para revenda e para sua festa.</p>
+                    </article>
+
+                    <article class="destaque-card">
+                        <div class="destaque-icone" aria-hidden="true">🤝</div>
+                        <h3>Atendimento</h3>
+                        <p>Fale diretamente com nossa equipe e combine preços pelo WhatsApp.</p>
+                    </article>
+
+                    <article class="destaque-card">
+                        <div class="destaque-icone" aria-hidden="true">⚡</div>
+                        <h3>Praticidade</h3>
+                        <p>Monte seu pedido em poucos cliques, sem cadastro e sem burocracia.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================== -->
+        <!-- PRODUTOS                                           -->
+        <!-- ================================================== -->
+        <section class="produtos" id="produtos">
+            <div class="container">
+
+                <header class="produtos-cabecalho">
+                    <h2 class="titulo-secao">Nossos produtos</h2>
+                    <p>Escolha seus favoritos, adicione ao pedido e envie para gente no WhatsApp.</p>
+                </header>
+
+                <div class="produtos-controles">
+
+                    <div class="busca">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/>
+                            <path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                        </svg>
+                        <label for="buscaProdutos" class="visually-hidden">Buscar produto</label>
+                        <input
+                            type="search"
+                            id="buscaProdutos"
+                            name="buscaProdutos"
+                            placeholder="Buscar produto..."
+                            autocomplete="off"
+                        >
+                    </div>
+
+                    <div class="categorias" id="categoriasLista" role="tablist" aria-label="Filtrar por categoria"></div>
+                </div>
+
+                <div class="produtos-grid" id="produtosGrid"></div>
+
+                <p class="nota-demonstrativa">
+                    * Imagens ilustrativas. Produtos apresentados como demonstração do catálogo.
+                    Disponibilidade e valores finais são confirmados pela distribuidora.
+                </p>
+            </div>
+        </section>
+
+        <!-- ================================================== -->
+        <!-- SOBRE A EMPRESA                                    -->
+        <!-- ================================================== -->
+        <section class="sobre" id="sobre">
+            <div class="container sobre-grid">
+
+                <div class="sobre-imagem">
+                    <img
+                        src="assets/images/combo-tradicional.svg"
+                        alt="Ilustração com produtos variados da Distribuidora Águia"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="sobre-texto">
+                    <span class="chip">Sobre nós</span>
+                    <h2 class="titulo-secao">A tradição do sabor, do nosso jeito.</h2>
+                    <p>
+                        A <strong>Distribuidora Águia</strong> trabalha para levar tradição,
+                        qualidade e variedade até você. Cada produto é escolhido com cuidado,
+                        para que sua loja, festa ou lanche da tarde tenha sempre o melhor sabor.
+                    </p>
+                    <ul class="sobre-lista">
+                        <li><strong>História:</strong> [TEXTO SOBRE A HISTÓRIA DA EMPRESA]</li>
+                        <li><strong>Qualidade:</strong> Produtos selecionados e bem armazenados.</li>
+                        <li><strong>Atendimento:</strong> Direto e humano, pelo WhatsApp.</li>
+                        <li><strong>Missão:</strong> Levar sabor e praticidade para Picos e região.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================== -->
+        <!-- CONTATO                                            -->
+        <!-- ================================================== -->
+        <section class="contato" id="contato">
+            <div class="container">
+
+                <header class="contato-cabecalho">
+                    <h2 class="titulo-secao">Fale com a gente</h2>
+                    <p>Dúvidas, encomendas e orçamentos são resolvidos rapidinho pelo WhatsApp.</p>
+                </header>
+
+                <div class="contato-grid">
+
+                    <a href="#contato" class="contato-card" id="contatoWhatsLink">
+                        <span class="contato-icone" aria-hidden="true">📲</span>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p id="contatoWhatsText">[NÚMERO DO WHATSAPP]</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="contato-card" id="contatoInstaLink" target="_blank" rel="noopener">
+                        <span class="contato-icone" aria-hidden="true">📸</span>
+                        <div>
+                            <h3>Instagram</h3>
+                            <p id="contatoInstaText">@[INSTAGRAM]</p>
+                        </div>
+                    </a>
+
+                    <div class="contato-card">
+                        <span class="contato-icone" aria-hidden="true">📍</span>
+                        <div>
+                            <h3>Endereço</h3>
+                            <p id="contatoEnderecoText">[ENDEREÇO] — Picos · PI</p>
+                        </div>
+                    </div>
+
+                    <div class="contato-card">
+                        <span class="contato-icone" aria-hidden="true">🕐</span>
+                        <div>
+                            <h3>Horário de funcionamento</h3>
+                            <p id="contatoHorarioText">[HORÁRIO]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contato-cta">
+                    <button type="button" class="btn btn-whatsapp" id="botaoFalarWhats">
+                        Falar conosco no WhatsApp
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================================================== -->
+    <!-- FOOTER                                             -->
+    <!-- ================================================== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <div class="footer-info">
+                <a href="#inicio" class="logo">
+                    <span class="logo-marca" aria-hidden="true">🦅</span>
+                    <span class="logo-texto"><strong>Distribuidora ÁGUIA</strong></span>
+                </a>
+                <p>
+                    Doces, paçocas, pipocas e variedades para toda a região.
+                    Monte seu pedido e envie direto para o nosso WhatsApp.
+                </p>
+            </div>
+
+            <div class="footer-coluna">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#sobre">Sobre nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h3>Atendimento</h3>
+                <ul>
+                    <li>📲 WhatsApp: <a href="#contato" id="footerWhatsLink">[NÚMERO]</a></li>
+                    <li>📸 Instagram: <a href="#" id="footerInstaLink" target="_blank" rel="noopener">@[INSTAGRAM]</a></li>
+                    <li>📍 [ENDEREÇO] — Picos · PI</li>
+                    <li>🕐 [HORÁRIO]</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-rodape">
+            <p>© <span id="anoAtual">2026</span> Distribuidora Águia — Todos os direitos reservados.</p>
+            <p>Pedidos e atendimento realizados diretamente pelo WhatsApp. Este site não processa pagamentos.</p>
+        </div>
+    </footer>
+
+    <!-- ================================================== -->
+    <!-- CARRINHO / PAINEL LATERAL                          -->
+    <!-- ================================================== -->
+    <div class="overlay" id="overlay" hidden></div>
+
+    <aside class="carrinho" id="carrinho" aria-label="Meu pedido" aria-hidden="true">
+
+        <div class="carrinho-header">
+            <h2>Meu pedido 🛒</h2>
+            <button type="button" class="fechar-btn" id="fecharCarrinhoBtn" aria-label="Fechar carrinho">✕</button>
+        </div>
+
+        <!-- Barra de progresso do pedido -->
+        <div class="passos" id="passos" aria-hidden="true">
+            <div class="passo-item ativo"><span>1</span><small>Produtos</small></div>
+            <div class="passo-item"><span>2</span><small>Entrega</small></div>
+            <div class="passo-item"><span>3</span><small>Dados</small></div>
+            <div class="passo-item"><span>4</span><small>Envio</small></div>
+        </div>
+
+        <div class="carrinho-body" id="carrinhoBody">
+
+            <!-- ETAPA 1: PRODUTOS -->
+            <div class="carrinho-etapa" id="carrinhoEtapa1">
+                <div id="carrinhoItens" class="carrinho-itens"></div>
+
+                <button type="button" class="link-limpar" id="limparPedidoBtn" hidden>
+                    🗑️ Limpar pedido
+                </button>
+
+                <div class="carrinho-vazio" id="carrinhoVazio">
+                    <span class="vazio-icone" aria-hidden="true">🛒</span>
+                    <h3>Seu pedido está vazio.</h3>
+                    <p>Escolha nossos produtos e monte seu pedido.</p>
+                    <button type="button" class="btn btn-primario" id="verProdutosBtn">Ver produtos</button>
+                </div>
+
+                <div class="carrinho-resumo" id="carrinhoResumo" hidden>
+                    <div class="resumo-linha">
+                        <span>Subtotal</span>
+                        <span id="subtotalTxt">R$ 0,00</span>
+                    </div>
+                    <div class="resumo-linha" id="taxaLinha" hidden>
+                        <span>Taxa de entrega</span>
+                        <span id="taxaTxt">R$ 0,00</span>
+                    </div>
+                    <div class="resumo-linha total">
+                        <span>Total estimado</span>
+                        <span id="totalTxt">R$ 0,00</span>
+                    </div>
+                    <p class="aviso-carrinho">
+                        O valor é uma estimativa. Confirmação, disponibilidade e entrega
+                        são tratados pela distribuidora no WhatsApp.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ETAPA 2: ENTREGA -->
+            <div class="carrinho-etapa" id="carrinhoEtapa2" hidden>
+                <h3 class="etapa-titulo">Como prefere receber?</h3>
+                <p class="etapa-sub">Escolha a forma de recebimento do seu pedido.</p>
+
+                <fieldset class="campo recebimento">
+                    <legend class="visually-hidden">Forma de recebimento</legend>
+                    <div class="recebimento-opcoes">
+                        <label class="recebimento-opcao">
+                            <input type="radio" name="recebimento" value="entrega" id="optEntrega">
+                            <span>🛵 <strong>Entrega</strong><br><small>No seu endereço</small></span>
+                        </label>
+                        <label class="recebimento-opcao">
+                            <input type="radio" name="recebimento" value="retirada" id="optRetirada">
+                            <span>🏪 <strong>Retirada</strong><br><small>No nosso local</small></span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="campo" id="divEndereco" hidden>
+                    <label for="enderecoEntrega">Endereço de entrega *</label>
+                    <input
+                        type="text" id="enderecoEntrega" name="enderecoEntrega"
+                        placeholder="Rua, número, bairro, complemento"
+                        autocomplete="street-address"
+                    >
+                    <select id="bairroEntrega" name="bairroEntrega" class="campo-select" style="display:none">
+                        <option value="">Selecionar bairro (ajuda a calcular a entrega)</option>
+                    </select>
+                </div>
+
+                <div class="resumo-mini" id="resumoEntrega" hidden>
+                    <div class="resumo-linha"><span>Subtotal</span><span id="entSubtotalTxt">R$ 0,00</span></div>
+                    <div class="resumo-linha" id="entTaxaLinha" hidden><span>Taxa de entrega</span><span id="entTaxaTxt">R$ 0,00</span></div>
+                    <div class="resumo-linha total"><span>Total estimado</span><span id="entTotalTxt">R$ 0,00</span></div>
+                </div>
+            </div>
+
+            <!-- ETAPA 3: DADOS DO CLIENTE -->
+            <div class="carrinho-etapa" id="carrinhoEtapa3" hidden>
+                <h3 class="etapa-titulo">Seus dados</h3>
+                <p class="etapa-sub">Só o necessário para montar seu pedido. Nada de senha ou pagamento aqui.</p>
+
+                <div class="campo">
+                    <label for="clienteNome">Nome *</label>
+                    <input type="text" id="clienteNome" name="clienteNome" placeholder="Seu nome" autocomplete="name" required>
+                </div>
+
+                <div class="campo">
+                    <label for="clienteTelefone">Telefone / WhatsApp *</label>
+                    <input
+                        type="tel" id="clienteTelefone" name="clienteTelefone"
+                        placeholder="(89) 99999-9999" autocomplete="tel" required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="observacoesPedido">Observações do pedido</label>
+                    <textarea
+                        id="observacoesPedido" name="observacoesPedido" rows="3"
+                        placeholder="Ex.: entregar a partir das 19h"
+                    ></textarea>
+                </div>
+            </div>
+
+            <!-- ETAPA 4: ENVIO / CONFIRMAÇÃO -->
+            <div class="carrinho-etapa" id="carrinhoEtapa4" hidden>
+                <h3 class="etapa-titulo">Confira seu pedido ✅</h3>
+                <p class="etapa-sub">Revise tudo antes de enviar para o nosso WhatsApp.</p>
+                <div id="confirmacaoResumo" class="confirmacao"></div>
+                <p class="aviso-carrinho">
+                    Ao confirmar, o WhatsApp abrirá com sua mensagem pronta.
+                    A distribuidora fará a confirmação da disponibilidade e do valor final.
+                </p>
+            </div>
+
+            <!-- Mensagens de erro da etapa -->
+            <p class="erro-form" id="erroEtapa" hidden></p>
+        </div>
+
+        <!-- Rodapé do carrinho (total + botões de navegação) -->
+        <div class="carrinho-footer" id="carrinhoFooter">
+            <div class="total-bar">
+                <span>Total estimado</span>
+                <strong id="totalBarTxt">R$ 0,00</strong>
+            </div>
+            <div class="footer-acoes">
+                <button type="button" class="btn btn-ghost" id="btnVoltar">← Voltar</button>
+                <button type="button" class="btn btn-primario" id="btnContinuar">Continuar</button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ================================================== -->
+    <!-- MODAL DE DETALHES DO PRODUTO                       -->
+    <!-- ================================================== -->
+    <div class="modal" id="modalProduto" role="dialog" aria-modal="true" aria-labelledby="modalNome" hidden>
+        <div class="modal-conteudo">
+            <button type="button" class="modal-fechar" id="fecharModalProdutoBtn" aria-label="Fechar detalhes do produto">✕</button>
+
+            <div class="modal-imagem">
+                <img id="modalImagem" src="" alt="">
+            </div>
+
+            <div class="modal-info">
+                <span class="badge-categoria" id="modalCategoria"></span>
+                <h3 id="modalNome"></h3>
+                <p id="modalDescricao"></p>
+                <p class="preco" id="modalPreco"></p>
+
+                <div class="quantidade">
+                    <span>Quantidade</span>
+                    <div class="quantidade-controle">
+                        <button type="button" id="modalQtdMenos" aria-label="Diminuir quantidade">−</button>
+                        <span id="modalQtd" aria-live="polite">1</span>
+                        <button type="button" id="modalQtdMais" aria-label="Aumentar quantidade">+</button>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="modalObservacao">Observação do produto</label>
+                    <input type="text" id="modalObservacao" placeholder="Ex.: caixa especial para presente">
+                </div>
+
+                <button type="button" class="btn btn-primario btn-largo" id="modalAdicionarBtn">
+                    Adicionar ao pedido
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================================== -->
+    <!-- TOAST / FEEDBACK                                   -->
+    <!-- ================================================== -->
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
