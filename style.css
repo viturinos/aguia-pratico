@@ -873,7 +873,7 @@ section {
     transition: transform var(--transicao), box-shadow var(--transicao);
 }
 
-a.contato-card:hover {
+.contato-card:hover {
     transform: translateY(-3px);
     box-shadow: var(--sombra-suave);
     border-color: var(--primary-color);
